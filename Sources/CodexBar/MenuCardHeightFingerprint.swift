@@ -88,11 +88,11 @@ extension UsageMenuCardView.Model.Metric {
             MenuCardHeightFingerprint.field("detailRight", self.detailRightText),
             self.detailRightSecondaryText == nil ? "detailRightSecondary=0" : "detailRightSecondary=1",
             MenuCardHeightFingerprint.field(
-                "sessionEquivalentVerdict",
-                self.sessionEquivalentDetail?.verdictText),
+                "sessionEquivalentLeft",
+                self.sessionEquivalentDetail?.leftText),
             MenuCardHeightFingerprint.field(
-                "sessionEquivalentNumber",
-                self.sessionEquivalentDetail?.numberText),
+                "sessionEquivalentRight",
+                self.sessionEquivalentDetail?.rightText),
             self.pacePercent == nil ? "pace=0" : "pace=1",
             self.paceOnTop ? "paceTop=1" : "paceTop=0",
             self.cardStyle ? "card=1" : "card=0",
